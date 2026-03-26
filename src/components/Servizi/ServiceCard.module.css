@@ -1,0 +1,120 @@
+.card {
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2.5rem 3rem;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 2rem;
+}
+
+.meta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-weight: 900;
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  text-transform: uppercase;
+  color: var(--color-white);
+  letter-spacing: 0.05em;
+  margin-bottom: 0.3rem;
+}
+
+.subtitle {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: clamp(0.9rem, 1.5vw, 1.25rem);
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 0.03em;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.description {
+  font-family: var(--font-body);
+  font-size: clamp(1rem, 1.4vw, 1.2rem);
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.6;
+  max-width: 28ch;
+}
+
+@media (max-width: 768px) {
+  .card {
+    min-height: 50vh;
+    padding: 1.5rem;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .meta {
+    order: 1;
+    text-align: center;
+    align-items: center;
+  }
+
+  .body {
+    order: 2;
+    text-align: center;
+    align-items: center;
+  }
+
+  .title{
+    font-size: clamp(2.5rem, 2vw, 2.5rem);
+  }
+
+  .description{
+      font-size: clamp(1.2rem, 1.6vw, 1.5rem);
+  }
+
+  /* Reset reversed cards so title stays on top for all cards */
+  .content.reversed .meta {
+    order: 1;
+  }
+
+  .content.reversed .body {
+    order: 2;
+  }
+
+  .subtitle {
+    font-size: 0.75rem;
+  }
+
+  .description {
+    font-size: 0.7rem;
+  }
+}

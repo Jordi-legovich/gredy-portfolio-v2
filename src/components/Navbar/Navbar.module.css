@@ -1,0 +1,60 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--navbar-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 3rem 0;
+  background: transparent;
+  z-index: 1000;
+}
+
+.logoLink {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 36px;
+  width: auto;
+  object-fit: contain;
+}
+
+.links {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+.links a {
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-white);
+  opacity: 0.9;
+  transition: opacity 0.2s;
+}
+
+.links a:hover {
+  opacity: 1;
+}
+
+/* ── Mobile: move navbar to bottom ─────────────────────────── */
+@media (max-width: 768px) {
+  .navbar {
+    top: auto;
+    bottom: 0;
+    height: var(--mobile-navbar-height);
+    padding: 0 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .desktopOnly {
+    display: none;
+  }
+}
