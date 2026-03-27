@@ -13,7 +13,6 @@ export default function Hero() {
         <nav className={styles.mobileNav}>
           <a href="#chi-siamo">Chi Siamo</a>
           <a href="#servizi">Servizi</a>
-          <a href="#contatti">Contatti</a>
         </nav>
       </div>
     </section>
