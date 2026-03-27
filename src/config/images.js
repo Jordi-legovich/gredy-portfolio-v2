@@ -1,17 +1,12 @@
-import backgroundImg from '../assets/images/background.jpg'
-import logoImg from '../assets/images/logo.png'
-import clubImg from '../assets/images/club.jpg'
-import eventiImg from '../assets/images/eventi.jpg'
-import fotoImg from '../assets/images/foto.jpg'
-import graficaImg from '../assets/images/grafica.jpg'
+const BASE = `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_CLOUD_NAME}/image/upload`
 
-// To switch to Cloudinary, replace the imported values here.
-// No component files need to change.
+// Images stored in Cloudinary. Public IDs include the Cloudinary-generated suffix.
+// To update an image, upload a new file and update the public ID here.
 export const IMAGES = {
-  background: backgroundImg,
-  logo: logoImg,
-  club: clubImg,
-  eventi: eventiImg,
-  foto: fotoImg,
-  grafica: graficaImg,
+  background: `${BASE}/background.jpg_dojjaz.jpg`,
+  logo:       `${BASE}/logo_qumfi0.png`,
+  club:       `${BASE}/Club_pvyfle.jpg`,
+  eventi:     `${BASE}/Eventi_gvf80z.jpg`,
+  foto:       `${BASE}/foto_ptaok2.jpg`,
+  grafica:    `${BASE}/grafica_budflb.jpg`,
 }
