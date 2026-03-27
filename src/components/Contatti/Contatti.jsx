@@ -6,8 +6,8 @@ import styles from './Contatti.module.css'
 const LINKS = [
   {
     icon: <FaEnvelope />,
-    label: 'jordi.legovich@gmail.com',
-    href: 'mailto:jordi.legovich@gmail.com',
+    label: 'djgredybooking@gmail.com',
+    href: 'mailto:djgredybooking@gmail.com',
   },
   {
     icon: <FaInstagram />,
