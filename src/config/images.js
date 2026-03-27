@@ -1,4 +1,4 @@
-const BASE = `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_CLOUD_NAME}/image/upload`
+const BASE = 'https://res.cloudinary.com/dhzswiwrp/image/upload'
 
 // Images stored in Cloudinary. Public IDs include the Cloudinary-generated suffix.
 // To update an image, upload a new file and update the public ID here.
