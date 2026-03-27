@@ -1,5 +1,6 @@
 import { FaEnvelope, FaInstagram, FaMixcloud } from 'react-icons/fa'
 import { FaTiktok } from 'react-icons/fa6'
+import { useInView } from '../../hooks/useInView'
 import styles from './Contatti.module.css'
 
 const LINKS = [
@@ -26,8 +27,12 @@ const LINKS = [
 ]
 
 export default function Contatti() {
+  const [ref, inView] = useInView(0.5)
+  const cls = inView ? 'anim in-view' : 'anim'
+
   return (
-    <section id="contatti" className={styles.section}>
+    <section id="contatti" className={styles.section} ref={ref}>
+      <div className={cls}>
       <h2 className={styles.title}>Get in Touch</h2>
       <ul className={styles.links}>
         {LINKS.map(({ icon, label, href }) => (
@@ -44,6 +49,7 @@ export default function Contatti() {
           </li>
         ))}
       </ul>
+      </div>
     </section>
   )
 }
