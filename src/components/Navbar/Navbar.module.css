@@ -44,6 +44,10 @@
   opacity: 1;
 }
 
+.contattIcon {
+  display: none;
+}
+
 /* ── Mobile: move navbar to bottom ─────────────────────────── */
 @media (max-width: 768px) {
   .navbar {
@@ -56,5 +60,15 @@
 
   .desktopOnly {
     display: none;
+  }
+
+  .contattLabel {
+    display: none;
+  }
+
+  .contattIcon {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
   }
 }

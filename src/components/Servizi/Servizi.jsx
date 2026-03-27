@@ -4,7 +4,7 @@ import styles from './Servizi.module.css'
 
 const SERVICES = [
   {
-    title: 'Club',
+    title: 'DJing',
     subtitle: 'The Sound Experience',
     description:
       "Il battito del dancefloor. Set eclettici che spaziano tra Urban e Open Format, studiati per leggere la pista e trasformare ogni set in un evento irripetibile.",

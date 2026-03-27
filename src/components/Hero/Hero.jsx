@@ -9,7 +9,7 @@ export default function Hero() {
       style={{ backgroundImage: `url(${IMAGES.background})` }}
     >
       <div className={styles.content}>
-        <h1 className={styles.title}>We Are<br />A <span className={styles.strike}>Creative</span><br />Team</h1>
+        <h1 className={styles.title}>Esperienza e<br /> Visione per <br /> Ogni Evento</h1>
         <nav className={styles.mobileNav}>
           <a href="#chi-siamo">Chi Siamo</a>
           <a href="#servizi">Servizi</a>

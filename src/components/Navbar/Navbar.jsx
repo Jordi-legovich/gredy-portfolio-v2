@@ -1,3 +1,4 @@
+import { FaComment } from 'react-icons/fa'
 import { IMAGES } from '../../config/images'
 import styles from './Navbar.module.css'
 
@@ -15,7 +16,10 @@ export default function Navbar() {
           <a href="#servizi">Servizi</a>
         </li>
         <li>
-          <a href="#contatti">Contatti</a>
+          <a href="#contatti">
+            <span className={styles.contattLabel}>Contatti</span>
+            <span className={styles.contattIcon}><FaComment /></span>
+          </a>
         </li>
       </ul>
     </nav>

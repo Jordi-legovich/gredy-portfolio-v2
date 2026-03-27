@@ -28,7 +28,7 @@ const LINKS = [
 export default function Contatti() {
   return (
     <section id="contatti" className={styles.section}>
-      <h2 className={styles.title}>Get in <span className={styles.strike}>Touch</span></h2>
+      <h2 className={styles.title}>Get in Touch</h2>
       <ul className={styles.links}>
         {LINKS.map(({ icon, label, href }) => (
           <li key={href}>
