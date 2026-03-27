@@ -8,7 +8,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 2.5rem 3rem;
+  padding: 2.5rem 0rem;
 }
 
 .card::before {
@@ -24,14 +24,17 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  gap: 2rem;
+  justify-items: center;
 }
 
-.meta {
+.text {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  gap: 0.4rem;
+}
+
+.reversed .text {
+  grid-column: 2;
 }
 
 .strike {
@@ -56,12 +59,6 @@
   letter-spacing: 0.03em;
 }
 
-.body {
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
-}
-
 .description {
   font-family: var(--font-body);
   font-size: clamp(1rem, 1.4vw, 1.2rem);
@@ -73,7 +70,7 @@
 @media (max-width: 768px) {
   .card {
     min-height: 50vh;
-    padding: 1.5rem;
+    padding: 1.5rem !important;
   }
 
   .content {
@@ -81,33 +78,18 @@
     gap: 0.5rem;
   }
 
-  .meta {
-    order: 1;
+  .text {
+    grid-column: 1;
     text-align: center;
     align-items: center;
   }
 
-  .body {
-    order: 2;
-    text-align: center;
-    align-items: center;
+  .reversed .text {
+    grid-column: 1;
   }
 
-  .title{
+  .title {
     font-size: clamp(2.5rem, 2vw, 2.5rem);
-  }
-
-  .description{
-      font-size: clamp(1.2rem, 1.6vw, 1.5rem);
-  }
-
-  /* Reset reversed cards so title stays on top for all cards */
-  .content.reversed .meta {
-    order: 1;
-  }
-
-  .content.reversed .body {
-    order: 2;
   }
 
   .subtitle {

@@ -7,10 +7,8 @@ export default function ServiceCard({ title, subtitle, description, image, align
       style={{ backgroundImage: `url(${image})` }}
     >
       <div className={`${styles.content} ${align === 'right' ? styles.reversed : ''}`}>
-        <div className={styles.meta}>
+        <div className={styles.text}>
           <h3 className={styles.title}>{title}</h3>
-        </div>
-        <div className={styles.body}>
           <h4 className={styles.subtitle}>{subtitle}</h4>
           <p className={styles.description}>{description}</p>
         </div>
