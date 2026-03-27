@@ -69,7 +69,7 @@
 
 @media (max-width: 768px) {
   .card {
-    min-height: 50vh;
+    min-height: 65vh;
     padding: 1.5rem !important;
   }
 
