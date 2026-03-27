@@ -9,7 +9,7 @@ export default function ChiSiamo() {
     <section id="chi-siamo" className={styles.section} ref={ref}>
       <div className={cls}>
         <h2 className={styles.title}>
-          WE ARE A <br /> CREATIVE <br /> TEAM
+          WE ARE A <br /> <span className={styles.strike}>CREATIVE</span> <br /> TEAM
         </h2>
       </div>
       <div className={cls}>

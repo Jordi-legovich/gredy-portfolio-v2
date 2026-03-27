@@ -33,22 +33,22 @@ export default function Contatti() {
   return (
     <section id="contatti" className={styles.section} ref={ref}>
       <div className={cls}>
-      <h2 className={styles.title}>Get in Touch</h2>
-      <ul className={styles.links}>
-        {LINKS.map(({ icon, label, href }) => (
-          <li key={href}>
-            <a
-              href={href}
-              className={styles.link}
-              target={href.startsWith('mailto') ? undefined : '_blank'}
-              rel={href.startsWith('mailto') ? undefined : 'noopener noreferrer'}
-            >
-              <span className={styles.icon}>{icon}</span>
-              {label}
-            </a>
-          </li>
-        ))}
-      </ul>
+        <h2 className={styles.title}>Get in <span className={styles.strike}>Touch</span></h2>
+        <ul className={styles.links}>
+          {LINKS.map(({ icon, label, href }) => (
+            <li key={href}>
+              <a
+                href={href}
+                className={styles.link}
+                target={href.startsWith('mailto') ? undefined : '_blank'}
+                rel={href.startsWith('mailto') ? undefined : 'noopener noreferrer'}
+              >
+                <span className={styles.icon}>{icon}</span>
+                {label}
+              </a>
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   )

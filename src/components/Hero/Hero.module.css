@@ -38,6 +38,7 @@
 
 .strike {
   text-decoration: line-through;
+  text-decoration-thickness: 5px;
 }
 
 .mobileNav {
@@ -45,6 +46,10 @@
 }
 
 @media (max-width: 768px) {
+  .strike {
+    text-decoration-thickness: 3px;
+  }
+
   .mobileNav {
     display: flex;
     flex-direction: column;

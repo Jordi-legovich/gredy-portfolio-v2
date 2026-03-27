@@ -22,6 +22,7 @@
 
 .strike {
   text-decoration: line-through;
+  text-decoration-thickness: 5px;
 }
 
 .body {
@@ -33,6 +34,10 @@
 }
 
 @media (max-width: 768px) {
+  .strike {
+    text-decoration-thickness: 3px;
+  }
+
   .section {
     grid-template-columns: 1fr;
     justify-items: center;
